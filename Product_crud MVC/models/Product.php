@@ -1,9 +1,5 @@
 <?php
-/**
- * User: TheCodeholic
- * Date: 10/11/2020
- * Time: 10:51 AM
- */
+
 
 namespace app\models;
 
@@ -14,7 +10,7 @@ use app\helpers\UtilHelper;
 /**
  * Class Product
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
+ * @author  Siddhi Kholkar <siddhi197@gmail.com>
  * @package app\models
  */
 class Product
