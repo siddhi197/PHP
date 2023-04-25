@@ -1,0 +1,15 @@
+{
+    "name": "thecode/good",
+    "authors": [
+        {
+            "name": "Siddhi Kholkar",
+            "email": "siddhi197@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}
