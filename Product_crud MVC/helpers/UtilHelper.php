@@ -6,7 +6,7 @@ namespace app\helpers;
 /**
  * Class UtilHelper
  *
- * @author  Zura Sekhniashvili <zurasekhniashvili@gmail.com>
+ * @author  Siddhi Kholkar <siddhi197@gmail.com>
  * @package app\helpers
  */
 class UtilHelper
