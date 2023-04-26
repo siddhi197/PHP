@@ -66,6 +66,10 @@
        
 }
 
+        $statement1 = $pdo->prepare('Select * from upload order by id desc');
+        $statement1->execute();
+        $result =  $statement1->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 
@@ -95,6 +99,31 @@
             <input type="submit" name="submit" id="submit" value="Submit" />
         </form>
         </br>
+        <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example">
+			<thead>
+				<tr>
+                    <th align="center">#</th>	
+					<th width="60%" align="center">Files</th>
+					<th align="center">Action</th>	
+				</tr>
+			</thead>
+			<?php
+                foreach($result as $i=>$file){
+			?>
+			<tr>
+                <td>
+                    <?php  echo $i+1;?>
+                </td>
+				<td>
+                    <?php  echo $file['name'] ;?>
+				</td>
+				<td>
+					<button class="alert-success"><a href="download.php?filename=<?php echo $file['name'];?>&f=<?php echo $file['fname'] ?>">Download</a></button>
+				</td>
+			</tr>
+			<?php }?>
+		</table>
+
     </div>
 </body>
 </html>
